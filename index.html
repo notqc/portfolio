@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        .icon{
+            display: flex;
+            gap: 30px;
+        }
+        h2{
+            margin-top: 0;
+        }
+        h1{
+            margin: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      
+        <nav>
+          <p class="logo">M</p>
+          <div class="navbar">
+            <a href="index.html" class="nv">Home</a>
+            <a href="about.html" class="nv">About</a>
+            <a href="resume.html" class="nv">Resume</a>
+            <a href="contact.html" class="nv">Contact</a>
+          </div>
+
+          <p id="logo">K</p>
+        </nav>
+        <div class="box">
+
+        </div>
+
+      <div class="hero">
+        <div class="sec">
+            <h1><span id="element" class = "ml3"></span></h1>
+          <div class="same"><span class = "yo"><h3>Myself,</h3></span><span><h3 class = "ml3"> Khushi Malviya</h3></span>
+          </div><div class="icon">
+          <a href = "https://www.linkedin.com/in/khushi-malviya-2a7067288/"><img src = "assests/linkedin-svgrepo-com.svg"></a>
+          <a href = "https://github.com/notqc"><img src = "assests/github-142-svgrepo-com.svg"></a>
+          <a href = "contact.html"><img src = "assests/contacts-svgrepo-com.svg"></a>
+        </div></div>
+        <img src="assests\publicdomainq-girl_laptop.png" id = "img"/>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [ 'NAMASTE!','KONICHIWA!', 'HELLO!'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+</html>
