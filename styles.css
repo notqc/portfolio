@@ -47,7 +47,9 @@ body {
   z-index: 0;
   opacity: 0.8;
 }
-
+h1{
+  color: rgb(159, 89, 239);
+}
 .ml3 {
   /* font-size: 3rem; */
   color: rgb(159, 89, 239);
