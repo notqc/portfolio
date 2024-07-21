@@ -6,23 +6,312 @@
     <title>Portfolio</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
-        .icon{
-            display: flex;
-            gap: 30px;
-            width: 515px;
-        }
-        h2{
-            margin-top: 0;
-        }
-        h1{
-            margin: 0;
-        }
-        .quote{
-          font-size: 1rem;
-          font-family: Georgia, 'Times New Roman', Times, serif;
-          
-        }
         
+        body {
+  background-color: black;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+.box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  z-index: 0;
+}
+
+.main {
+  background-color: rgb(0, 0, 0);
+  background-image: url("assests/galaxy-4.svg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.hero {
+  font-size: 2.5rem;
+  justify-content: center;
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  padding: 80px 100px 0 80px;
+  margin: 0;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#img {
+  height: 300px;
+  width: 300px;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+h1 {
+  color: rgb(159, 89, 239);
+}
+
+.ml3 {
+  color: rgb(159, 89, 239);
+  z-index: 0;
+  padding: 0;
+
+}
+
+.yo {
+  color: white;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.same {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.quote {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.icon{
+  /* display: flex;
+  gap: 30px; */
+  margin-top: 45px;
+  width: 50vw;
+  
+}
+#i2{
+  margin-bottom:5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2{
+  margin-top: 0;
+}
+h1{
+  margin: 0;
+}
+.quote{
+font-size: 1rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+nav {
+  height: 7vh;
+  padding: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgb(33, 1, 56) 0%,
+    rgb(26, 1, 37) 35%,
+    rgb(36, 1, 63) 100%
+  );
+  position: fixed;
+  width: 100%;
+  display: flex;
+  gap: 74%;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding-bottom: 1rem;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(159, 89, 239);
+  margin-top: 1.2rem;
+}
+
+#logo {
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+  padding-left: 2.8rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.nv {
+  color: white;
+}
+
+.nv:hover {
+  color: rgb(131, 86, 199);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1500px) {
+  .navbar {
+    gap: 1rem;
+  }
+  nav {
+    gap: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .hero {
+    padding: 60px 50px 0 50px;
+    gap: 30px;
+  }
+  
+
+  .navbar {
+    gap: 1rem;
+  }
+  nav {
+    gap: 50%;
+  }
+
+  #img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 50px 30px 0 30px;
+    font-size: 2rem;
+  }
+
+  /* .logo {
+    padding-left: 2rem;
+    font-size: 1.3rem;
+  } */
+}
+
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 70px 20px 20px 20px;
+  
+  }
+  .icon{
+    /* display: flex;
+    gap: 30px; */
+    width: 65vw;
+    
+  }
+  #img {
+    height: 180px;
+    width: 180px;
+    
+  }
+
+  .navbar {
+    /* flex-direction: column; */
+    gap: 0.5rem;
+  }
+  .same{
+    margin-top: 5vw;
+  }
+
+  /* .logo {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+  } */
+
+  nav {
+    gap: 50%;
+  }
+}
+@media (max-width: 676px) {
+  
+  nav{
+    gap: 40%
+  }
+  .hero {
+    padding: 45px 10px 0 10px;
+    font-size: 1.4rem;
+  }
+
+  #img {
+    height: 180px;
+    width: 180px;
+  }
+  h1{
+    font-size: 3.4rem;
+  }}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 45px 10px 0 10px;
+    font-size: 1.4rem;
+  }
+
+  #img {
+    height: 150px;
+    width: 150px;
+  }
+  
+  h1{
+    font-size: 3.4rem;
+  }
+
+  /* .logo {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+  } */
+
+  nav {
+    /* flex-direction: column; */
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    gap: 0.7rem;
+    justify-content: space-between;
+  }
+
+  nav {
+    gap: 30%;
+  }
+}
     </style>
   </head>
   <body>
@@ -49,9 +338,9 @@
           <div class="same"><span class = "yo"><h3>Myself,</h3></span><span><h3 class = "ml3"> Khushi Malviya</h3></span>
           <span class = "quote"> " Code is her canvas, innovation is her art. "</span> </div> 
           <div class="icon">
-          <a href = "https://www.linkedin.com/in/khushi-malviya-2a7067288/"><img src = "assests/linkedin-svgrepo-com.svg"></a>
-          <a href = "https://github.com/notqc"><img src = "assests/github-142-svgrepo-com.svg"></a>
-          <a href = "contact.html"><img src = "assests/contacts-svgrepo-com.svg"></a>
+          <a href = "https://www.linkedin.com/in/khushi-malviya-2a7067288/" id = "i1"><img src = "assests/linkedin-svgrepo-com.svg"></a>
+          <a href = "https://github.com/notqc"><img src = "assests/github-142-svgrepo-com.svg"  id = "i2"></a>
+          <a href = "contact.html"><img src = "assests/contacts-svgrepo-com.svg"  id = "i3"></a>
         </div></div>
         <img src="assests\publicdomainq-girl_laptop.png" id = "img"/>
       </div>

@@ -8,15 +8,23 @@
     <style>
       .contact {
         display: flex;
-        flex-direction: column;
-        padding-top: 190px;
-        padding-left: 150px;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 15vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
         padding-bottom: 0;
-        column-gap: 0;
-    }
+        /* flex-wrap:wrap ; */
+        /* height: 100vh; */
+        /* width: calc(100vw - 10vw); */
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
+      }
     h1 {
           z-index: 0;
-          font-size: 2.5rem;
+          font-size: 3rem;
           color: rgb(159, 89, 239);
 
           font-family: "Martel Sans", sans-serif;
@@ -38,6 +46,7 @@
           z-index: 0;
           display: flex;
           gap: 450px;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
           padding: 150px;
@@ -50,7 +59,7 @@
         .line{
           display: flex;
           flex-direction: column;
-          flex-wrap:wrap ;
+          /* flex-wrap:wrap ; */
           padding: 0;
           margin: 0;
           z-index: 0;
@@ -66,6 +75,39 @@
           line-height: 23px;
         margin:0;
       }
+      img{
+        height: 300px;
+        width: 300px;
+        z-index: 0;
+      }
+@media (max-width: 1100px) {
+.contact{
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  
+  justify-content: center;
+  align-items: center;
+}
+.ab{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:0;
+  margin:0;
+
+}
+}
+@media (max-width: 600px) {
+h1{
+  font-size: 2.3rem;
+}
+p{
+            font-size: 0.9rem;
+        }
+}
     </style>
   </head>
   <body>
@@ -84,6 +126,7 @@
 
     </div>
     <div class="contact">
+      <div class="content">
       <h1>About</h1>
       <div class="hr"></div>
       <div class="ab">
@@ -100,8 +143,8 @@
           innovative projects and collaborate with like-minded individuals in
           the tech community.
         </p>
-      </div>
-    <img src="assests/pricing-Illustration.svg"></div>
+      </div></div></div>
+    <img src="assests/pricing-Illustration.svg">
       <div class="hd"></div>
     </div></div>
   </body>
