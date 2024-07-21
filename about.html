@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About</title>
-        <link href="styles.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link href="styles.css" rel="stylesheet" />
     <style>
       .contact {
         display: flex;
@@ -18,134 +18,138 @@
         /* height: 100vh; */
         /* width: calc(100vw - 10vw); */
       }
-      .content{
+      .content {
         display: flex;
         flex-direction: column;
       }
-    h1 {
-          z-index: 0;
-          font-size: 3rem;
-          color: rgb(159, 89, 239);
+      h1 {
+        z-index: 0;
+        font-size: 3rem;
+        color: rgb(159, 89, 239);
 
-          font-family: "Martel Sans", sans-serif;
-          font-weight: bold;
-          margin:0;
-          padding: 0;
-        }
-        .hr{
-            height: 2px;
-            z-index: 0;
-            width: 7.5rem;
-            background-color: rgb(216, 214, 214);
-            margin: 0;
-        }
-        span{
-            font-size: 1.3rem;
-        }
-        .ab{
-          z-index: 0;
-          display: flex;
-          gap: 450px;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 150px;
-          padding-top: 0;
-          padding-left: 0;
-          margin: 0;
-        
-          
-        }
-        .line{
-          display: flex;
-          flex-direction: column;
-          /* flex-wrap:wrap ; */
-          padding: 0;
-          margin: 0;
-          z-index: 0;
-          line-height: 35px;
-        }
-        #name {
-            font-size: 1.5rem;
-            color: rgb(159, 89, 239);
-            font-family: "Martel Sans", sans-serif;
-            font-weight: bold;
-        }
-        p{
-          line-height: 23px;
-        margin:0;
+        font-family: "Martel Sans", sans-serif;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
       }
-      img{
+      .hr {
+        height: 2px;
+        z-index: 0;
+        width: 7.5rem;
+        background-color: rgb(216, 214, 214);
+        margin: 0;
+      }
+      span {
+        font-size: 1.3rem;
+      }
+      .ab {
+        z-index: 0;
+        display: flex;
+        gap: 450px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 150px;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0;
+      }
+      .line {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap:wrap ; */
+        padding: 0;
+        margin: 0;
+        z-index: 0;
+        line-height: 35px;
+      }
+      #name {
+        font-size: 1.5rem;
+        color: rgb(159, 89, 239);
+        font-family: "Martel Sans", sans-serif;
+        font-weight: bold;
+      }
+      p {
+        line-height: 23px;
+        margin: 0;
+      }
+      img {
         height: 300px;
         width: 300px;
         z-index: 0;
       }
-@media (max-width: 1100px) {
-.contact{
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-}
-.content{
-  
-  justify-content: center;
-  align-items: center;
-}
-.ab{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding:0;
-  margin:0;
-
-}
-}
-@media (max-width: 600px) {
-h1{
-  font-size: 2.3rem;
-}
-p{
-            font-size: 0.9rem;
+      @media (max-width: 1100px) {
+        .contact {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
-}
+        .content {
+          justify-content: center;
+          align-items: center;
+        }
+        .ab {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2.3rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      @media (max-width: 600px) {
+        .contact{
+          margin-top: 30px;
+        }
+        
+      }
     </style>
   </head>
   <body>
-    <div class="main"><nav>
-      <p class="logo">M</p>
-      <div class="navbar">
-        <a href="index.html" class="nv">Home</a>
-        <a href="about.html" class="nv">About</a>
-        <a href="resume.html" class="nv">Resume</a>
-        <a href="contact.html" class="nv">Contact</a>
+    <div class="main">
+      <nav>
+        <p class="logo">M</p>
+        <div class="navbar">
+          <a href="index.html" class="nv">Home</a>
+          <a href="about.html" class="nv">About</a>
+          <a href="resume.html" class="nv">Resume</a>
+          <a href="contact.html" class="nv">Contact</a>
+        </div>
+
+        <p id="logo">K</p>
+      </nav>
+      <div class="box"></div>
+      <div class="contact">
+        <div class="content">
+          <h1>About</h1>
+          <div class="hr"></div>
+          <div class="ab">
+            <div class="line">
+              <span>My name is <span id="name">Khushi Malviya</span>.</span>
+              <p>
+                I am an undergraduate student pursuing B.Tech in Metallurgical
+                and Materials Engineering from NIT Jamshedpur. I have a passion
+                for web development and enjoy tackling challenges through
+                competitive programming. My interests also extend to designing,
+                where I find joy in combining creativity with technical
+                expertise. Through my academic journey and personal projects, I
+                continuously seek to expand my knowledge and skills in these
+                areas. I am eager to contribute to innovative projects and
+                collaborate with like-minded individuals in the tech community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="assests/pricing-Illustration.svg" />
+        <div class="hd"></div>
       </div>
-
-      <p id="logo">K</p>
-    </nav>
-    <div class="box">
-
     </div>
-    <div class="contact">
-      <div class="content">
-      <h1>About</h1>
-      <div class="hr"></div>
-      <div class="ab">
-      <div class="line">
-        <span>My name is <span id="name">Khushi Malviya</span>.</span>
-        <p>
-          I am an undergraduate student pursuing B.Tech in Metallurgical and
-          Materials Engineering from NIT Jamshedpur. I have a passion for web
-          development and enjoy tackling challenges through competitive
-          programming. My interests also extend to designing, where I find joy
-          in combining creativity with technical expertise. Through my academic
-          journey and personal projects, I continuously seek to expand my
-          knowledge and skills in these areas. I am eager to contribute to
-          innovative projects and collaborate with like-minded individuals in
-          the tech community.
-        </p>
-      </div></div></div>
-    <img src="assests/pricing-Illustration.svg">
-      <div class="hd"></div>
-    </div></div>
   </body>
 </html>

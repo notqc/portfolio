@@ -429,11 +429,43 @@ a {
   }
 
   .navbar {
-    gap: 0.7rem;
+    gap: 0.5rem;
     justify-content: space-between;
   }
 
   nav {
-    gap: 30%;
+    gap: 20%;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    padding: 45px 10px 0 10px;
+    font-size: 1.4rem;
+  }
+
+  #img {
+    height: 150px;
+    width: 150px;
+  }
+  
+
+  /* .logo {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+  } */
+
+  nav {
+    /* flex-direction: column; */
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
+  nav {
+    gap: 20%;
   }
 }
