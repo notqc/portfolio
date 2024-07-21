@@ -47,7 +47,7 @@ body {
   z-index: 0;
   opacity: 0.8;
 }
-h1{
+h1 {
   color: rgb(159, 89, 239);
 }
 .ml3 {
@@ -57,25 +57,24 @@ h1{
   z-index: 0;
   padding: 0;
 }
-yo{
-    color: white;
+yo {
+  color: white;
 }
-h3{
-    padding: 0;
-    margin: 0;
+h3 {
+  padding: 0;
+  margin: 0;
 }
-.same{
-    display: flex;
-    flex-direction: column;
-    margin-top:50px;
-    margin-bottom:0px;
-  
+.same {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
-.quote{
+.quote {
   margin: 0;
   padding-top: 10px;
 }
-.icon{
+.icon {
   margin-top: 45px;
 }
 nav {
@@ -130,16 +129,16 @@ nav {
   margin-top: 10px;
 }
 
-  .nv {
-    color: white;
-  }
-  .nv:hover {
-    color: rgb(131, 86, 199);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  .second {
-    height: 100vh;
-  }
+.nv {
+  color: white;
+}
+.nv:hover {
+  color: rgb(131, 86, 199);
+}
+
+a {
+  text-decoration: none;
+}
+.second {
+  height: 100vh;
+}
